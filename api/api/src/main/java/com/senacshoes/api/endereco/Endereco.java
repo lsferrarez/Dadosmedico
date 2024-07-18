@@ -1,5 +1,14 @@
 package com.senacshoes.api.endereco;
 
+import jakarta.persistence.Embeddable;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Embeddable
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Endereco {
     private String logradouro;
     private String bairro;
@@ -8,6 +17,7 @@ public class Endereco {
     private String complemento;
     private String cidade;
     private String uf;
+  
 
-    
+  
 }
